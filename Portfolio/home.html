@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Metadata -->
+        <meta charset="utf-8">
+        <meta name= "viewport" content="width=device-width, initial-scale=1">
+        
+        <!-- Styles-->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Belleza" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+
+        <!-- Title -->
+        <title>Portfolio</title>
+    </head>
+    <body>
+        <header>
+            <!-- Navigation Bar-->
+            <nav>
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbutton"><i class="fas fa-bars"></i></label>
+                <label class="logo">Portfolio</label>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#collages">Collages</a></li>
+                    <li><a href="#paintings">Paintings</a></li>
+                    <li><a href="#photos">Photos</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Main Section -->
+        <div class="main">
+            <!-- Home Section -->
+            <div id="home">
+                <div class="image">
+                    <img id = "logo" src="images/Logo_Detailed.png" alt="Logo">
+                </div>
+            </div>
+
+            <!-- Collage Section -->
+            <div id="collages">
+                <h1>Collages</h1>
+                    <div class="image">  
+                        <img class="vertical" src="images/Space_Man.jpeg" alt="Space Man Collage">         
+                        <img src="images/Macaron.jpeg" alt="Macaron Collage">
+                        <img src="images/Flame_Red.jpeg" alt="Flame Red Collage">
+                    </div>       
+            </div>
+
+            <!-- Painting Section -->
+            <div id="paintings">
+                <h1>Paintings</h1>
+                <div class="image">  
+                    <img src="images/Mercury.png" alt="Mars Watercolor">
+                    <img src="images/Venus.png" alt="Venus Watercolor">
+                    <img src="images/Mars.png" alt="Mars Watercolor">
+                    <img src="images/Earth.png" alt="Earth Watercolor">
+                    <img src="images/Uranus.png" alt="Uranus Watercolor">
+                </div>
+            </div>
+
+            <!-- Photo Section-->
+            <div id="photos">
+                <h1>Photos</h1>
+                <div class="image">  
+                    <img class="vertical" src="images/Frankfurt_Clock_Tower.jpeg" alt="Frankfurt Clock Tower">
+                    <img class="vertical" src="images/Frankfurt_Street.jpeg" alt="Frankfurt Street">
+                    <img src="images/Frankfurt_Window.jpeg" alt="Frankfurt">
+                    <img src="images/Lion_Monument.jpeg" alt="Switzerland Lion Lion_Monument">
+                    <img src="images/Sacre_Coeur_Paris.jpeg" alt="Sacre Coeur Paris">
+                    <img src="images/Munich_Town_Hall.jpeg" alt="Town Hall Munich">
+                    <img src="images/Neuschwanstein_Castle.jpeg" alt="Neuschwanstein Castle">
+                    <img src="images/Nymphenburg_Palace.jpeg" alt="Nymphenburg Palace">
+                </div>
+            </div>
+
+            <!-- About Section-->
+            <div id="about">
+                <h1>About</h1>
+                <div>
+                    <p>This portfolio was created in less than a day to showcase some of my skills and artwork,
+                        so please forgive any silly mistakes. Especially along the mobile view menu. Thanks!</p>
+                </div>
+            </div>
+        </div>
+        <script type ="text/javascript">
+            window.addEventListener("scroll", function(){
+                var header = document.querySelector("header");
+                header.classList.toggle("sticky", window.scrollY > 0);
+            })
+
+        </script>
+    </body>
+</html>
